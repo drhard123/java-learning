@@ -1,0 +1,45 @@
+public class temp {
+
+    public static void main(String[] args) {
+        String strArr1 [] = new String[] {"Nilin", "Dane", "Amaljith", "Akshay", "Geo", "Cristiano"};
+        int count = strArr1.length;
+
+        middleCharacterOfOddlengthString(strArr1);
+        middleCharacterOfEvenlengthString(strArr1);
+
+
+
+        public static void middleCharacterOfOddlengthString(String[] str)
+        {
+            for (int i = 0; i< count; i++ )
+            {
+              int stringLength = str[i].length();
+              if (stringLength % 2 == 0)
+              {
+                  int middle = stringLength/2;
+                  System.out.println("Middle character of "+ str +"is : " +str[i].charAt(middle));
+              }
+
+            }
+
+        }
+
+        public static void middleCharacterOfEvenlengthString(String[] str)
+        {
+            for (int i = 0; i< count; i++ )
+            {
+                int stringLength = str[i].length();
+                if (stringLength % 2 != 0)
+                {
+                    int middle = stringLength/2;
+                    System.out.println("Middle character of "+ str +"is : " +str[i].charAt(middle));
+
+                }
+
+            }
+
+        }
+
+
+    }
+}
