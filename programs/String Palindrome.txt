@@ -1,0 +1,43 @@
+public class Main {
+    public static void main(String[] args) {
+        String Str = Civic;
+        String Str2 = stringReverse(Str);
+        System.out.println(The reverse of string is  + Str2);
+        Boolean isRev = stringCompare(Str, Str2);
+        if (isRev == true) {
+            System.out.println(The strings are palindrome of each other);
+        }
+        else
+        {
+            System.out.println(The strings are not palindrome of each other);
+        }
+
+    }
+
+    public static String stringReverse(String Str)
+    {
+        char [] actualArray = Str.toCharArray();
+        char [] reverseArray = new char[Str.length()];
+        for (int i =0; iStr.length(); i++)
+        {
+            reverseArray[i] = actualArray[Str.length() - 1 - i];
+        }
+        trying to convert character array back to string
+        String reverseString = new String(reverseArray);
+        return reverseString;
+
+    }
+
+    public static boolean stringCompare(String Str, String Str2)
+    {
+        if (Str.equalsIgnoreCase(Str2))
+            return true;
+        else
+            return false;
+
+
+    }
+
+
+
+}
