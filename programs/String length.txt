@@ -1,0 +1,38 @@
+public class Main {
+    public static void main(String[] args) {
+        String Str = "He is a boy. And his name is Dane. He is a cool guy.";
+        char character = getCharacterAtPosition(Str,6);
+        System.out.println("The character at is "+ character);
+        char character2 = Temp(Str,6);
+        System.out.println("The character at is "+ character2);
+        int l = getLengthOfString(Str);
+        System.out.println("The length of string is "+ l);
+
+
+    }
+    public static char getCharacterAtPosition(String Str, int position){
+
+        char [] DaneArray = Str.toCharArray();
+        char c = DaneArray[position];
+        return c;
+    }
+    public static char Temp(String Str, int position){
+
+        char [] DTArray = Str.toCharArray();
+        char d = DTArray[position+2];
+        return d;
+    }
+
+    public static int getLengthOfString(String Str)
+    {
+        int length = 0;
+        char [] DTArray1 = Str.toCharArray();
+        for (char c : DTArray1)
+        {
+            length++;
+        }
+        return length;
+    }
+
+
+}
